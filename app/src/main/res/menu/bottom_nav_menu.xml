@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_task"
+        android:icon="@drawable/ic_add_task"
+        android:title="Add Task" />
+
+    <item
+        android:id="@+id/task_list"
+        android:icon="@drawable/ic_task_list"
+        android:title="Tasks" />
+
+    <item
+        android:id="@+id/report"
+        android:icon="@drawable/ic_task_report"
+        android:title="Report" />
+
+    <item android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"/>
+
+</menu>

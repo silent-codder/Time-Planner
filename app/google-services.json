@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "248699329168",
+    "firebase_url": "https://time-planner-53cd1.firebaseio.com",
+    "project_id": "time-planner-53cd1",
+    "storage_bucket": "time-planner-53cd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248699329168:android:d7641dd2b2919e60dd9615",
+        "android_client_info": {
+          "package_name": "com.example.time"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248699329168-ktcs2smtcsp2pqmecr9is2sjia68sava.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHfmeYnLoflyzeMZmCmCEJL3Jv8tx2ZIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248699329168-ktcs2smtcsp2pqmecr9is2sjia68sava.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

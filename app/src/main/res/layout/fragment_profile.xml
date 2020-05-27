@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ProfileFragment"
+    android:layout_marginBottom="50dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/profile_bg"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/profile_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#000"/>
+
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajinkya Shinde"
+        android:textStyle="bold"
+        android:layout_below="@id/profile_img"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/profile_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer"
+        android:layout_below="@id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth Date :"
+            android:textStyle="bold"
+            android:layout_below="@id/profile_profession"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textStyle="bold"
+        android:layout_below="@id/dob"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/mo_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone :"
+        android:textStyle="bold"
+        android:layout_below="@id/email"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+
+    <TextView
+        android:id="@+id/txt_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09-07-1999"
+        android:layout_below="@id/profile_profession"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="silentcodder@gmail.com"
+        android:layout_below="@id/dob"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"/>
+
+
+    <TextView
+        android:id="@+id/txt_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9096618447"
+        android:layout_below="@id/email"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"/>
+
+    <Button
+        android:id="@+id/add_profile_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textAllCaps="false"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+
+
+</RelativeLayout>

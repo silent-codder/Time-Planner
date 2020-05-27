@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AddTaskFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_marginBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative"
+            android:padding="30dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/lottie_addTask"
+                app:lottie_rawRes="@raw/addtask"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+            <EditText
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lottie_addTask"
+                android:hint="Title"
+                android:maxLength="10"
+                android:background="@drawable/edit_txt_bg"
+                android:padding="10dp"
+                android:id="@+id/txt_title"/>
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="start"
+                android:maxLength="40"
+                android:layout_below="@id/txt_title"
+                android:hint="Description"
+                android:maxLines="2"
+                android:background="@drawable/edit_txt_bg"
+                android:padding="10dp"
+                android:id="@+id/txt_description"/>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/txt_description"
+                android:text="Set Reminder"
+                android:background="@drawable/reminder_bg"
+                android:padding="10dp"
+                android:textStyle="normal"
+                android:id="@+id/set_remainder"/>
+
+
+
+            <Button
+                android:id="@+id/create_task"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/set_remainder"
+                android:layout_centerHorizontal="true"
+                android:text="Create task"
+                android:background="@drawable/button_bg"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

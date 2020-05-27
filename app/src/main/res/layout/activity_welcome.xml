@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.WelcomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative"
+            android:padding="20dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lottie_rawRes="@raw/welcome"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+            <TextView
+                android:id="@+id/txt_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:gravity="center"
+                android:layout_below="@id/lottie_welcome"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Day planner and tasks scheduler app, including to do list and reminder."
+                android:gravity="center"
+                android:layout_below="@id/txt_welcome"/>
+
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_description"
+                android:layout_centerHorizontal="true"
+                android:text="Getting Started"
+                android:background="@drawable/button_bg"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"/>
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
