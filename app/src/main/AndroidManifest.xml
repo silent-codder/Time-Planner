@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/ic_launcher_background"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activitys.UserLogin"></activity>
+        <activity android:name=".Activitys.Edit_Profile"></activity>
+        <activity android:name=".Activitys.UserLogin" />
 
         <receiver android:name="com.allyants.notifyme.NotificationPublisher" />
         <receiver android:name="com.allyants.notifyme.BootNotifyMe">

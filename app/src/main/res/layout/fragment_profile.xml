@@ -24,12 +24,23 @@
         app:civ_border_width="2dp"
         app:civ_border_color="#000"/>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/edit_profile"
+        android:layout_below="@id/profile_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:lottie_rawRes="@raw/edit_profile"
+        app:lottie_autoPlay="true"
+        android:layout_marginLeft="217dp"
+        android:layout_marginTop="-40dp"
+        app:lottie_loop="true"/>
+
 
     <TextView
         android:id="@+id/profile_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ajinkya Shinde"
+        android:text="User Name"
         android:textStyle="bold"
         android:layout_below="@id/profile_img"
         android:textSize="20dp"
@@ -40,7 +51,7 @@
         android:id="@+id/profile_profession"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Developer"
+        android:text="Check internet connection !!!"
         android:layout_below="@id/profile_name"
         android:layout_centerHorizontal="true"
         android:textSize="15dp"/>
@@ -79,42 +90,42 @@
 
 
     <TextView
-        android:id="@+id/txt_dob"
+        android:id="@+id/profile_dob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="09-07-1999"
+        android:text=""
         android:layout_below="@id/profile_profession"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="120dp"/>
 
     <TextView
-        android:id="@+id/txt_email"
+        android:id="@+id/profile_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="silentcodder@gmail.com"
+        android:text=""
         android:layout_below="@id/dob"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="120dp"/>
 
 
     <TextView
-        android:id="@+id/txt_phone"
+        android:id="@+id/profile_phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="9096618447"
+        android:text="--"
         android:layout_below="@id/email"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="120dp"/>
 
-    <Button
-        android:id="@+id/add_profile_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Edit Profile"
-        android:textAllCaps="false"
-        android:layout_marginLeft="8dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp" />
+<!--    <Button-->
+<!--        android:id="@+id/edit_profile"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Edit Profile"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="20dp" />-->
 
     <Button
         android:id="@+id/logout"
