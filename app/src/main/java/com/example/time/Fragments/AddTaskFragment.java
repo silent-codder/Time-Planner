@@ -31,6 +31,8 @@ public class AddTaskFragment extends Fragment implements DatePickerDialog.OnDate
     Calendar now = Calendar.getInstance();
     TimePickerDialog tpd;
     DatePickerDialog dpd;
+
+    Button set_remainder;
     // Calendar calendar;
 
     int day, month, year, hour, minute;
@@ -46,7 +48,7 @@ public class AddTaskFragment extends Fragment implements DatePickerDialog.OnDate
         description = view.findViewById(R.id.txt_description);
         create_task = view.findViewById(R.id.create_task);
 
-        Button set_remainder = view.findViewById(R.id.set_remainder);
+         set_remainder = view.findViewById(R.id.set_remainder);
 
 //           date = view.findViewById(R.id.date);
 //        time = view.findViewById(R.id.time);time
@@ -149,6 +151,7 @@ public class AddTaskFragment extends Fragment implements DatePickerDialog.OnDate
         now.set(Calendar.MONTH,monthOfYear);
         now.set(Calendar.DAY_OF_MONTH,dayOfMonth);
         tpd.show(getFragmentManager(), "Timepickerdialog");
+
     }
 
     @Override
@@ -156,6 +159,7 @@ public class AddTaskFragment extends Fragment implements DatePickerDialog.OnDate
         now.set(Calendar.HOUR_OF_DAY,hourOfDay);
         now.set(Calendar.MINUTE,minute);
         now.set(Calendar.SECOND,second);
+        set_remainder.setText(hourOfDay + " : " + minute);
         Intent intent = new Intent(getContext(),TaskListFragment.class);
         intent.putExtra("test","I am a String");
         NotifyMe notifyMe = new NotifyMe.Builder(getContext())

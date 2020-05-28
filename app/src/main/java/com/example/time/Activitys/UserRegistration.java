@@ -76,7 +76,7 @@ public class UserRegistration extends AppCompatActivity {
                     public void onDateSet(DatePicker view, int year, int month, int day) {
 
                         month += 1;
-                        birth_date.setText(day + "/" + month + "/" + year);
+                        birth_date.setText(day + "-" + month + "-" + year);
                     }
                 },year,month,day);
                 datePickerDialog.show();

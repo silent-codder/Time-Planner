@@ -54,7 +54,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Profession"
-                android:inputType="text"
                 android:background="@drawable/edit_txt_bg"
                 android:layout_below="@id/first_name"
                 android:padding="10dp"
@@ -73,26 +72,13 @@
                 android:layout_marginTop="20dp"/>
 
             <EditText
-                android:id="@+id/phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="Phone No"
-                android:textSize="16sp"
-                android:background="@drawable/reminder_bg"
-                android:layout_below="@id/birth_date"
-                android:gravity="start"
-                android:padding="10dp"
-                android:layout_marginTop="20dp"/>
-
-            <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:hint="Email"
                 android:background="@drawable/edit_txt_bg"
-                android:layout_below="@id/phone"
+                android:layout_below="@id/birth_date"
                 android:padding="10dp"
                 android:layout_marginTop="20dp"/>
 
