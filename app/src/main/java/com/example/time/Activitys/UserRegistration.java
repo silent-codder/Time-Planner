@@ -41,6 +41,9 @@ public class UserRegistration extends AppCompatActivity {
     Calendar calendar;
     int day,month,year;
 
+    String img_url = "https://firebasestorage.googleapis.com/v0/b/time-planner-53cd1.appspot.com/o/com.google.firebase.auth.internal.zzn%407d62459.jpg?alt=media&token=626b5168-88d1-496f-90d1-7664ba839d6e";
+
+
     private FirebaseAuth auth;
     private DatabaseReference databaseReference;
 
@@ -125,6 +128,7 @@ public class UserRegistration extends AppCompatActivity {
                 map.put("Profession" , profession);
                 map.put("DOB" , dob);
                 map.put("Email" , email);
+                map.put("Profile Img", img_url);
 
                 databaseReference.child("Users").child(auth.getCurrentUser().getUid()).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override

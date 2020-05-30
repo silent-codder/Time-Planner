@@ -150,6 +150,7 @@ public class AddTaskFragment extends Fragment implements DatePickerDialog.OnDate
         now.set(Calendar.YEAR,year);
         now.set(Calendar.MONTH,monthOfYear);
         now.set(Calendar.DAY_OF_MONTH,dayOfMonth);
+        set_remainder.setText(dayOfMonth + " - " + monthOfYear + " - " + year );
         tpd.show(getFragmentManager(), "Timepickerdialog");
 
     }
@@ -159,20 +160,19 @@ public class AddTaskFragment extends Fragment implements DatePickerDialog.OnDate
         now.set(Calendar.HOUR_OF_DAY,hourOfDay);
         now.set(Calendar.MINUTE,minute);
         now.set(Calendar.SECOND,second);
-        set_remainder.setText(hourOfDay + " : " + minute);
         Intent intent = new Intent(getContext(),TaskListFragment.class);
         intent.putExtra("test","I am a String");
         NotifyMe notifyMe = new NotifyMe.Builder(getContext())
                 .title(title.getText().toString())
                 .content(description.getText().toString())
-                .color(255,0,0,255)
-                .led_color(255,255,255,255)
+                .color(74, 196, 28, 1)
+                .led_color(74, 196, 28, 1)
                 .time(now)
-                .addAction(intent,"Reset",false)
+              //  .addAction(intent,"Reset",false)
                 .key("test")
-                .addAction(new Intent(),"Cancel",true,false)
+             //   .addAction(new Intent(),"Cancel",true,false)
                 .addAction(intent,"Done")
-                .large_icon(R.drawable.ic_task_list)
+                .large_icon(R.drawable.schedule)
                // .rrule("FREQ=MINUTELY;INTERVAL=5;COUNT=2")
                 .build();
 
